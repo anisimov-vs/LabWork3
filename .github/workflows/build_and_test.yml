@@ -1,0 +1,35 @@
+name: Build and Test
+
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential cmake
+      - name: Create build directory
+        run: mkdir -p build
+      - name: Configure
+        run: |
+          cd build
+          cmake ..
+      - name: Build
+        run: |
+          cd build
+          make
+      - name: Test
+        run: |
+          cd build
+          ./test_jump_list
