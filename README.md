@@ -50,3 +50,7 @@ int main() {
     return 0;
 }
 ``` 
+
+## License
+
+This project is provided as-is for educational purposes.
