@@ -1,0 +1,108 @@
+# Doxyfile for LabWork 3 - jump_list documentation
+
+# Project information
+PROJECT_NAME           = "LabWork 3"
+PROJECT_BRIEF          = "A custom Skip List implementation for C++"
+PROJECT_LOGO           =
+
+# Output settings
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = YES
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO # Set to YES if you need PDF output
+GENERATE_RTF           = NO
+GENERATE_XML           = NO
+GENERATE_MAN           = NO
+GENERATE_AUTOGEN_DEF   = NO
+GENERATE_PERLMOD       = NO
+GENERATE_TAGFILE       = 
+
+# Source code settings
+# Assuming jump_list.h is in the current directory or a subdirectory
+# and README.md is in the current directory.
+INPUT                  = . README.md 
+FILE_PATTERNS          = *.h *.hpp *.cpp *.cxx *.cc *.c *.md *.markdown
+RECURSIVE              = YES # Search for source files in subdirectories
+EXCLUDE_SYMBOLS        = 
+
+# Preprocessor and parsing settings
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = NO
+SKIP_FUNCTION_MACROS   = YES
+ALPHABETICAL_INDEX     = YES
+CASE_SENSE_NAMES       = YES
+OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_OUTPUT_FOR_C++= YES
+BUILTIN_PRIMITIVE_TYPE_SIZE = YES
+JAVADOC_AUTOBRIEF      = NO
+QT_AUTOBRIEF           = NO
+MULTILINE_CPP_DRC_COMMENTS = YES
+INHERIT_DOCS           = YES
+SEPARATE_MEMBER_PAGES  = YES
+TAB_SIZE               = 4
+GENERATE_DEPRECATED_LIST = YES
+EXTENSION_MAPPING      = 
+MARKDOWN_SUPPORT       = YES
+AUTOLINK_SUPPORT       = YES
+TYPEDEF_HIDES_STRUCT   = YES
+
+# Documenting the code
+EXTRACT_ALL            = YES # Extract all entities, even if not documented
+EXTRACT_PRIVATE        = YES # Document private members
+EXTRACT_STATIC         = YES # Document static members
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = YES
+HIDE_UNDOC_MEMBERS     = NO  # Show undocumented members
+HIDE_UNDOC_CLASSES     = NO
+HIDE_FRIEND_INFO       = NO
+HIDE_INHERITED_MEMBERS = NO
+INTERNAL_DOCS          = NO
+SHOW_INCLUDE_FILES     = YES
+SHOW_DIRECTORIES       = YES
+SHOW_FILES             = YES
+SHOW_MODULE_MEMBERS    = YES
+CLASS_DIAGRAMS         = YES
+HAVE_DOT               = YES # Set to YES if you have Graphviz installed for diagrams
+CALL_GRAPH             = NO
+CALLER_GRAPH           = NO
+UML_LOOK               = YES
+UML_LIMIT_EXAMPLES     = YES
+TEMPLATE_RELATIONS     = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+
+# Warning and messages
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = YES
+WARN_FORMAT            = "$file:$line: $text"
+WARN_LOGFILE           = 
+
+# HTML specific settings
+HTML_FILE_EXTENSION    = .html
+HTML_HEADER            = 
+HTML_FOOTER            = 
+HTML_STYLESHEET        = 
+HTML_EXTRA_STYLESHEET  = 
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+HTML_TIMESTAMP         = YES
+HTML_DYNAMIC_SECTIONS  = YES
+HTML_INDEX_NUM_ENTRIES = 100
+GENERATE_TREEVIEW      = YES
+FORMULA_FONTSIZE       = 10
+
+# Search engine for HTML output
+SEARCHENGINE           = YES
+SERVER_BASED_SEARCH    = NO # Set to YES if you have a web server with PHP/CGI
+EXTERNAL_SEARCH        = NO
+SEARCHDATA_FILE        = searchdata.xml
+
+# Markdown specific settings for main page
+USE_MDFILE_AS_MAINPAGE = README.md # This line makes README.md the main page!
